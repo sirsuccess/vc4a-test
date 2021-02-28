@@ -1,14 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="./assets/icons/logo.svg" />
-    <title>VC4A</title>
-    <link rel="stylesheet" href="./styles/index.css" type="text/css" />
-    <script src="./scripts/index.js"></script>
-  </head>
-  <body>
-   
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description"
+    content="VC4A is connecting startup entrepreneurs with the knowledge, support programs, mentors and investors they need to succeed." />
+  <link rel="apple-touch-icon" href="./assets/icons/logo.svg" />
+  <!-- OG -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title"
+    content="VC4A is connecting startup entrepreneurs with the knowledge, support programs, mentors and investors they need to succeed." />
+  <meta property="og:description"
+    content="VC4A is connecting startup entrepreneurs with the knowledge, support programs, mentors and investors they need to succeed." />
+  <meta property="og:image" content="./assets/icons/logo.svg" />
+  <meta property="og:url" content="https://vc4a.com" />
+  <meta property="”og:site_name”" content="VC4A is connecting startup entrepreneurs" />
+  <link rel="apple-touch-icon" href="./assets/icons/logo.svg" />
+  <link rel="manifest" href="./manifest.json" />
+  <link rel="manifest" href="./manifest.json" />
+  <link rel="icon" href="./assets/icons/logo.svg" />
+
+  <title>VG4A</title>
+  <link rel="stylesheet" href="./styles/index.css" type="text/css" />
+  <script src="./scripts/index.js"></script>
+</head>
+
+<body>
+  <div class="contain-fluid" onclick="clicked()">
+    <div class="container">
+      <div class="navbar">
+        <div class="navbar__left">
+          <div class="navbar__left__logo" tabindex="1">
+            <img src="./assets/icons/logo.svg" alt="logo" />
+          </div>
+          <ul class="lg-ul">
+            <li>
+              <div onclick="showLgExploreDropDown()" class="heading" tabindex="1" onkeypress="showLgExploreDropDown()">
+                Explore
+                <img src="./assets/icons/arrow-down.svg" alt="arrow down" class="heading" />
+              </div>
+              <div class="dropdown">
+                <ol>
+                  <a href="#">
+                    <li>
+                      <img src="./assets/icons/ventures.svg" alt="ventures" />
+                      <div class="left">
+                        <div class="left__tittle">Ventures</div>
+                        <div class="left__text">
+                          Explore business ventures in many sectors and
+                          countries.
+                        </div>
+                      </div>
+                    </li>
+                  </a>
+                  <a href="#">
+                    <li>
+                      <img src="./assets/icons/programs.svg" alt="programs" />
+                      <div class="left">
+                        <div class="left__tittle">Programs</div>
+                        <div class="left__text">
+                          Find support programs and opportunities for
+                          entrepreneurs.
+                        </div>
+                      </div>
+                    </li>
+                  </a>
+                  <a href="#">
+                    <li>
+                      <img src="./assets/icons/events.svg" alt="events" />
+                      <div class="left">
+                        <div class="left__tittle">Events</div>
+                        <div class="left__text">
+                          View all upcoming events for entrepreneurs and venture
+                          owners.
+                        </div>
+                      </div>
+                    </li>
+                  </a>
+                </ol>
+              </div>
+            </li></a>
+            <li>
+              <div onclick="showLgLearnDropDown()" class="heading" tabindex="1" onkeypress="showLgLearnDropDown()">
+                Learn
+                <img src="./assets/icons/arrow-down.svg" alt="arrow down" class="heading" />
+              </div>
+              <div class="dropdown-learn">
+                <ol>
+                  <a href="#">
+                    <li>
+                      <img src="./assets/icons/academy.svg" alt="Academy" />
+                      <div class="left">
+                        <div class="left__tittle">Academy</div>
+                        <div class="left__text">
+                          Access the leading online resource for startup
+                          founders.
+                        </div>
+                      </div>
+                    </li>
+                  </a>
+                  <a href="#">
+                    <li>
+                      <img src="./assets/icons/blog.svg" alt="Blog" />
+                      <div class="left">
+                        <div class="left__tittle">Blog</div>
+                        <div class="left__text">
+                          Learn and keep in tune with startup related issues and
+                          news.
+                        </div>
+                      </div>
+                    </li>
+                  </a>
+                </ol>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="navbar__right">
+          <button>Sign in</button>
+          <div class="navbar__right__menu" onclick="showMobileMenu()" tabindex="1">
+            <img src="./assets/icons/menu.svg" alt="menu" />
+          </div>
+        </div>
+      </div>
+
+      <!-- mobile menu -->
+      <div class="mobile-menu">
+        <div class="mobile__close" onclick="hideMobileMenu()" tabindex="1">
+          <img src="./assets/icons/close.svg" alt="cancel menu" />
+        </div>
+        <ul>
+          <div class="d-flex" onclick="showExplorerDropDown()">
+            <div>Explore</div>
+            <img src="./assets/icons/arrow-down-white.svg" alt="accordion arrow" class="accordion-img" />
+          </div>
+          <div class="explore">
+            <a href="#">
+              <li>Ventures</li>
+            </a>
+            <a href="#">
+              <li>Programs</li>
+            </a>
+            <a href="#">
+              <li>Events</li>
+            </a>
+          </div>
+        </ul>
+        <ul>
+          <div class="d-flex" onclick="showLearnDropDown()">
+            <div>Learn</div>
+            <img src="./assets/icons/arrow-down-white.svg" alt="accordion arrow" class="accordion-img" />
+          </div>
+          <div class="learn">
+            <a href="#"></a>
+            <li>Academy</li></a>
+            <a href="#"></a>
+            <li>Blog</li></a>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+
 </html>
